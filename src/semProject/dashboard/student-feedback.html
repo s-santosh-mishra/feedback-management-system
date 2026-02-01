@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Feedback | InsightEdu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="../favicon-16x16.png" type="image/x-icon">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="/src/output.css">
+
+    <style>
+        .rating-box {
+    width: 3.25rem;
+    height: 3.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    background-color: #4b5563; /* gray-600 */
+    transition: all 0.2s ease;
+}
+
+.peer:checked + .rating-box {
+    background-color: #3b82f6; /* blue-500 */
+}
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 shadow-md">
+        <div class="flex justify-between items-center px-8 py-4">
+            <h1 class="text-2xl font-semibold">
+                Insight<span class="text-green-400">Edu</span>
+            </h1>
+
+            <a href="student-dashboard.html">
+                <button class="bg-blue-500 hover:bg-blue-400 transition px-4 py-1.5 rounded-md">
+                    Back to Dashboard
+                </button>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="p-8 flex justify-center">
+
+        <div class="bg-gray-700 w-full max-w-3xl rounded-xl shadow-lg p-8">
+
+            <h2 class="text-3xl font-semibold mb-6 text-center">
+                Student Feedback Form
+            </h2>
+
+            <!-- Feedback Form -->
+            <form action="#" method="get" class="space-y-6">
+
+                <!-- Subject Selection -->
+                <div>
+                    <label class="block mb-2 font-medium">
+                        Select Subject
+                    </label>
+                    <select class="w-full bg-gray-600 p-2 rounded-md focus:outline-none">
+                        <option>Software Engineering</option>
+                        <option>Database Systems</option>
+                        <option>Computer Networks</option>
+                        <option>Operating Systems</option>
+                        <option>Web Technologies</option>
+                    </select>
+                </div>
+
+                <!-- Feedback Questions -->
+                <div class="space-y-10 mt-5">
+
+                    <!-- Question 1 -->
+                    <div class="space-y-4">
+                        <p class="font-medium text-lg">
+                            1. Faculty explains concepts clearly
+                        </p>
+
+                        <div class="flex gap-5">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q1" value="1" class="hidden peer">
+                                <div class="rating-box">1</div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q1" value="2" class="hidden peer">
+                                <div class="rating-box">2</div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q1" value="3" class="hidden peer">
+                                <div class="rating-box">3</div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q1" value="4" class="hidden peer">
+                                <div class="rating-box">4</div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="q1" value="5" class="hidden peer">
+                                <div class="rating-box">5</div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="space-y-4">
+                        <p class="font-medium text-lg">
+                            2. Teaching methodology is effective
+                        </p>
+
+                        <div class="flex gap-5">
+                            <label class="cursor-pointer"><input type="radio" name="q2" value="1" class="hidden peer">
+                                <div class="rating-box">1</div>
+                            </label>
+                            <label class="cursor-pointer"><input type="radio" name="q2" value="2" class="hidden peer">
+                                <div class="rating-box">2</div>
+                            </label>
+                            <label class="cursor-pointer"><input type="radio" name="q2" value="3" class="hidden peer">
+                                <div class="rating-box">3</div>
+                            </label>
+                            <label class="cursor-pointer"><input type="radio" name="q2" value="4" class="hidden peer">
+                                <div class="rating-box">4</div>
+                            </label>
+                            <label class="cursor-pointer"><input type="radio" name="q2" value="5" class="hidden peer">
+                                <div class="rating-box">5</div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="space-y-4">
+                        <p class="font-medium text-lg">
+                            3. Faculty is approachable and supportive
+                        </p>
+
+                        <div class="flex gap-5">
+                            <label class="cursor-pointer"><input type="radio" name="q3" value="1" class="hidden peer">
+                                <div class="rating-box">1</div>
+                            </label>
+                            <label class="cursor-pointer"><input type="radio" name="q3" value="2" class="hidden peer">
+                                <div class="rating-box">2</div>
+                            </label>
+                            <label class="cursor-pointer"><input type="radio" name="q3" value="3" class="hidden peer">
+                                <div class="rating-box">3</div>
+                            </label>
+                            <label class="cursor-pointer"><input type="radio" name="q3" value="4" class="hidden peer">
+                                <div class="rating-box">4</div>
+                            </label>
+                            <label class="cursor-pointer"><input type="radio" name="q3" value="5" class="hidden peer">
+                                <div class="rating-box">5</div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="space-y-4">
+                        <p class="font-medium text-lg">
+                            4. Course content is well structured
+                        </p>
+
+                        <div class="flex gap-5">
+                            <label class="cursor-pointer"><input type="radio" name="q4" value="1" class="hidden peer">
+                                <div class="rating-box">1</div>
+                            </label>
+                            <label class="cursor-pointer"><input type="radio" name="q4" value="2" class="hidden peer">
+                                <div class="rating-box">2</div>
+                            </label>
+                            <label class="cursor-pointer"><input type="radio" name="q4" value="3" class="hidden peer">
+                                <div class="rating-box">3</div>
+                            </label>
+                            <label class="cursor-pointer"><input type="radio" name="q4" value="4" class="hidden peer">
+                                <div class="rating-box">4</div>
+                            </label>
+                            <label class="cursor-pointer"><input type="radio" name="q4" value="5" class="hidden peer">
+                                <div class="rating-box">5</div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="space-y-4">
+                        <p class="font-medium text-lg">
+                            5. Overall satisfaction with the course
+                        </p>
+
+                        <div class="flex gap-5">
+                            <label class="cursor-pointer"><input type="radio" name="q5" value="1" class="hidden peer">
+                                <div class="rating-box">1</div>
+                            </label>
+                            <label class="cursor-pointer"><input type="radio" name="q5" value="2" class="hidden peer">
+                                <div class="rating-box">2</div>
+                            </label>
+                            <label class="cursor-pointer"><input type="radio" name="q5" value="3" class="hidden peer">
+                                <div class="rating-box">3</div>
+                            </label>
+                            <label class="cursor-pointer"><input type="radio" name="q5" value="4" class="hidden peer">
+                                <div class="rating-box">4</div>
+                            </label>
+                            <label class="cursor-pointer"><input type="radio" name="q5" value="5" class="hidden peer">
+                                <div class="rating-box">5</div>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Comments -->
+                <div>
+                    <label class="block mb-2 font-medium">
+                        Additional Comments (Optional)
+                    </label>
+                    <textarea rows="4" class="w-full bg-gray-600 p-2 rounded-md focus:outline-none"
+                        placeholder="Write your comments here..."></textarea>
+                </div>
+
+                <!-- Submit -->
+                <div class="text-center">
+                    <button class="bg-green-500 hover:bg-green-400 transition px-8 py-2 rounded-md font-medium">
+                        Submit Feedback
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

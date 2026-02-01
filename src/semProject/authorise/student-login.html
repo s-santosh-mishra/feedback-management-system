@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Login | InsightEdu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/src/semProject/favicon-16x16.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="/src/output.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/330033b57f.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+
+    <!-- Login Card -->
+    <div class="bg-gray-700 w-full max-w-md rounded-xl shadow-lg p-8">
+
+        <!-- Project Name -->
+        <h1 class="text-center text-2xl font-semibold mb-1">
+            Insight<span class="text-green-400">Edu</span>
+        </h1>
+        <p class="text-center text-gray-300 mb-6">
+            Student Login
+        </p>
+
+        <!-- Form -->
+        <form action="/src/semProject/dashboard/student-dashboard.html" method="get" class="space-y-5">
+
+            <!-- Registration Number -->
+            <div>
+                <label class="block mb-1 text-gray-300">
+                    Registration Number
+                </label>
+                <input type="text" name="registrationNo" required
+                    class="w-full bg-gray-600 p-2 rounded-md
+                           focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <!-- Password -->
+            <div class="relative">
+                <label class="block mb-1 text-gray-300">
+                    Password
+                </label>
+                <input type="password" name="password" required
+                    class="password-input w-full bg-gray-600 p-2 pr-10 rounded-md
+                           focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                <i class="fa-solid fa-eye password-toggle
+                          absolute right-3 top-10 cursor-pointer text-gray-300"></i>
+            </div>
+
+            <!-- Login Button -->
+            <button type="submit"
+                class="w-full bg-blue-500 hover:bg-blue-400 transition-colors duration-300 py-2 rounded-md">
+                Login
+            </button>
+        </form>
+
+        <!-- Register Redirect -->
+        <p class="text-center text-gray-300 mt-6">
+            New student?
+            <a href="/src/semProject/authorise/student-registrartion.html" class="text-blue-400 hover:underline">
+                Register here
+            </a>
+        </p>
+
+    </div>
+
+    <!-- Show / Hide Password Script -->
+    <script>
+        const toggles = document.querySelectorAll(".password-toggle");
+
+        toggles.forEach(toggle => {
+            toggle.addEventListener("click", () => {
+                const input = toggle.previousElementSibling;
+
+                if (input.type === "password") {
+                    input.type = "text";
+                    toggle.classList.replace("fa-eye", "fa-eye-slash");
+                } else {
+                    input.type = "password";
+                    toggle.classList.replace("fa-eye-slash", "fa-eye");
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
