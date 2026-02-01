@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Teacher Dashboard | InsightEdu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/src/semProject/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="/src/semProject/output.css">
+</head>
+
+<body class="bg-gray-900 text-white min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 shadow-md">
+        <div class="flex justify-between items-center px-8 py-4">
+            <h1 class="text-2xl font-semibold">
+                Insight<span class="text-green-400">Edu</span>
+            </h1>
+
+            <div class="flex items-center gap-4">
+                <span id="teacherName" class="text-gray-300">
+                    Welcome, Faculty
+                </span>
+
+                <a href="logout.html">
+                    <button
+                        class="bg-red-500 text-white hover:bg-red-400 transition px-4 py-1.5 rounded-md">
+                        Logout
+                    </button>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="p-8">
+
+        <h2 class="text-3xl font-semibold mb-8">
+            Teacher Dashboard
+        </h2>
+
+        <!-- Stats -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+
+            <div class="bg-gray-700 rounded-xl p-6 shadow-lg">
+                <h3 class="text-gray-300 mb-2">Subjects Handling</h3>
+                <p class="text-4xl font-bold text-blue-400">3</p>
+            </div>
+
+            <div class="bg-gray-700 rounded-xl p-6 shadow-lg">
+                <h3 class="text-gray-300 mb-2">Total Students</h3>
+                <p class="text-4xl font-bold text-green-400">120</p>
+            </div>
+
+            <div class="bg-gray-700 rounded-xl p-6 shadow-lg">
+                <h3 class="text-gray-300 mb-2">Feedback Received</h3>
+                <p class="text-4xl font-bold text-yellow-400">85</p>
+            </div>
+
+        </section>
+
+        <!-- Subjects Table -->
+        <section class="bg-gray-700 rounded-xl p-6 shadow-lg">
+
+            <h3 class="text-2xl font-semibold mb-4">
+                Assigned Subjects
+            </h3>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b border-gray-600 text-gray-300">
+                            <th class="py-2">Subject Code</th>
+                            <th>Subject Name</th>
+                            <th>Semester</th>
+                            <th>Students</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-600">
+                            <td class="py-2">CS501</td>
+                            <td>Software Engineering</td>
+                            <td>5</td>
+                            <td>40</td>
+                        </tr>
+                        <tr class="border-b border-gray-600">
+                            <td class="py-2">CS502</td>
+                            <td>Database Systems</td>
+                            <td>5</td>
+                            <td>42</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">CS503</td>
+                            <td>Computer Networks</td>
+                            <td>6</td>
+                            <td>38</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
